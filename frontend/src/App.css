@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Dark text */
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50; /* A darker blue for professional look */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.search-section input {
+  width: 40%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-section select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Course List */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.course-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+  font-size: 1.2rem;
+  color: #2980b9; /* A brighter blue for titles */
+}
+
+.course-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.course-card button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3498db; /* Blue button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.course-card button:hover {
+  background-color: #2980b9; /* Slightly darker on hover */
+}
+
+/* Matched Courses Section */
+.matched-courses-section {
+  margin-top: 50px;
+}
+
+.matched-courses-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #34495e; /* Darker blue-gray for section headers */
+}
+
+.matched-courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.matched-course-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.matched-course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.matched-course-card h4 {
+  font-size: 1.1rem;
+  color: #2980b9; /* Matches the main course card titles */
+}
+
+.matched-course-card p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.matched-course-card button {
+  padding: 8px 15px;
+  font-size: 0.95rem;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.matched-course-card button:hover {
+  background-color: #2980b9;
+}
+
+/* Cart Section */
+.cart-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cart-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cart-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-section li button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  background-color: #e74c3c; /* Red for remove button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-section li button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Checkout Button */
+.checkout {
+  padding: 10px 20px;
+  background-color: #27ae60; /* Green button for checkout */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.checkout:hover {
+  background-color: #229954; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .course-card,
+  .matched-course-card {
+    width: 90%;
+  }
+}
